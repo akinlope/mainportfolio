@@ -64,7 +64,7 @@ const Home = () => {
                     {/* <a href=""> */}
                         <button className="btn rounded-[5px]"><span>View Résumé</span></button>
                     {/* </a> */}
-                    <a href="https://github.com/akinlope" target="_blank">
+                    <a href="https://github.com/akinlope" target="_blank" rel="noreferrer">
                         <button className=" btn rounded-[5px]"><span>View GitHub</span></button>
                     </a>
                 </motion.div>
