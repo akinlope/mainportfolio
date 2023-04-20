@@ -1,23 +1,25 @@
 import man from "../image/man.jpg";
 import { motion } from "framer-motion";
-import { DevicePhoneMobileIcon, EnvelopeIcon } from "@heroicons/react/24/solid"
+import { FaEnvelope } from "react-icons/fa"
+import { BsPhone, BsWhatsapp } from "react-icons/bs"
+
 
 const About = () => {
     return (
         <div className=" h-screen w-4/5 mx-auto  ">
             <div className=" flex pt-32 justify-center">
                 <motion.div
-                animate={{
-                    x: 0,
-                    y: 0,
-                    scale: 1,
-                    rotate: 0
-                }}
-                initial={{
-                    x: 0,
-                    y: 0
-                }}
-                className="">
+                    animate={{
+                        x: 0,
+                        y: 0,
+                        scale: 1,
+                        rotate: 0
+                    }}
+                    initial={{
+                        x: 0,
+                        y: 0
+                    }}
+                    className="">
                     <p className=" font-nunito text-2xl text-mainTxt mt-2 font-bold text-center">Brief Information</p>
                     <p className=" font-Stretch text-5xl mt-2 font-extrabold text-brightTxt">ABOOUT</p>
                     <p className=" font-nunito text-2xl text-mainTxt mt-2 font-bold text-center ">Me</p>
@@ -27,18 +29,18 @@ const About = () => {
 
             <div className="flex justify-between mt-10">
                 {/* owner's progile */}
-                <motion.div 
-                animate={{
-                    x: 0,
-                    y: 0,
-                    scale: 1,
-                    rotate: 0
-                }}
-                initial={{
-                    x: 300,
-                    y: 0
-                }}
-                className="flex w-1/2 bg-slate-200 rounded-md p-2 pb-10">
+                <motion.div
+                    animate={{
+                        x: 0,
+                        y: 0,
+                        scale: 1,
+                        rotate: 0
+                    }}
+                    initial={{
+                        x: 300,
+                        y: 0
+                    }}
+                    className="flex w-1/2 bg-slate-200 rounded-md p-2 pb-10">
                     {/* img */}
                     <div className="">
                         <img className=" rounded-md" src={man} alt="" />
@@ -50,18 +52,30 @@ const About = () => {
                         </div>
                         {/* icons */}
                         <div className=" flex justify-around">
-                            <div className=" cursor-pointer">
-                                <div className=" flex justify-center">
-                                    <DevicePhoneMobileIcon width={30} />
+                            <a href="tel:+2349035680981">
+                                <div className=" cursor-pointer">
+                                    <div className=" flex justify-center">
+                                        <BsPhone width={30} />
+                                    </div>
+                                    <p>Call me</p>
                                 </div>
-                                <p>Call me</p>
-                            </div>
-                            <div className=" cursor-pointer">
-                                <div className=" flex justify-center">
-                                    <EnvelopeIcon width={30} />
+                            </a>
+                            <a href="mailto:akinrimisitt@gmail.com">
+                                <div className=" cursor-pointer">
+                                    <div className=" flex justify-center">
+                                        <FaEnvelope width={30} />
+                                    </div>
+                                    <p>Mail me</p>
                                 </div>
-                                <p>Mail me</p>
-                            </div>
+                            </a>
+                            <a href="https://wa.me/+2349035680981?text=Hi,%20I%20will%20be%20needing%20your%20experties%20in...">
+                                <div className=" cursor-pointer">
+                                    <div className=" flex justify-center">
+                                        <BsWhatsapp width={30} />
+                                    </div>
+                                    <p>Chat me</p>
+                                </div>
+                            </a>
                             {/* <div>
 
                             </div> */}
@@ -69,18 +83,18 @@ const About = () => {
                     </div>
                 </motion.div>
                 {/* technologies */}
-                <motion.div 
-                animate={{
-                    x: 0,
-                    y: 0,
-                    scale: 1,
-                    rotate: 0
-                }}
-                initial={{
-                    x: -300,
-                    y: 0
-                }}
-                className=" w-5/12 bg-slate-200 rounded-md p-2 pb-10">
+                <motion.div
+                    animate={{
+                        x: 0,
+                        y: 0,
+                        scale: 1,
+                        rotate: 0
+                    }}
+                    initial={{
+                        x: -300,
+                        y: 0
+                    }}
+                    className=" w-5/12 bg-slate-200 rounded-md p-2 pb-10">
                     <div className=" flex justify-center pt-2 font-bold mt-5">
                         <p>SKILLS</p>
                     </div>
@@ -113,7 +127,7 @@ const About = () => {
 
 
                         <div>
-                                <p className=" font-bold mt-5 mb-5">BACK-END</p>
+                            <p className=" font-bold mt-5 mb-5">BACK-END</p>
                             <div className=" flex items-center">
                                 <div className=" w-3 h-3 bg-[#19547b] mr-2 rounded-[10px]"></div>
                                 <p>Firebase</p>
