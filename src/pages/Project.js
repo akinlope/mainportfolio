@@ -1,11 +1,14 @@
 const Project = () => {
-    return ( 
+    return (
         <div className="h-screen w-4/5 mx-auto ">
-            <iframe className=" w-96 h-96 rounded-[10px] " src="https://tolutodo.netlify.app" frameborder="0"></iframe>
-            <iframe className=" w-96 h-96 rounded-[10px] " src="https://google.com" frameborder="0"></iframe>
-
+            <div className=" flex justify-center items-center h-screen">
+            <div className=" text-brightTxt">
+                <h1 className=" text-5xl">Sorry, Page is stil under</h1>
+                <h1 className=" text-9xl">Construction</h1>
+            </div>
+            </div>
         </div>
-     );
+    );
 }
- 
+
 export default Project;
