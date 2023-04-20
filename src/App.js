@@ -5,7 +5,6 @@ import Navbar from "./components/Navbar";
 import Project from "./pages/Project";
 import Contact from "./pages/Contact";
 import About from "./pages/About"
-import Test from "./components/Test";
 
 
 const router = createBrowserRouter([
