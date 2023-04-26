@@ -28,13 +28,18 @@ const Contact = () => {
 
     return (
         <div className=" h-screen w-4/5 mx-auto">
-            <div className="pt-40 p-5">
+            <div className=" pt-40 p-5">
                 <motion.div
                 animate={{
                     x: 0,
                     y: 0,
                     scale: 1,
-                    rotate: 0
+                    rotate: 0,
+                    transition: {
+                        type: "spring",
+                        stiffness: 500
+                        
+                    }
                 }}
                 initial={{
                     x: 100,
@@ -70,7 +75,7 @@ const Contact = () => {
                                 <label htmlFor="floating_last_name" className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-brightTxt peer-focus:dark:text-brightTxt peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email address</label>
                             </div>
                         </div>
-                        <textarea onChange={handleChangeMessasge} name="" id="" cols="" rows="4" className=" mt-4 w-full bg-bgBlack text-sm text-mainTxt border-gray-500 resize-none border-b" placeholder=" Leave a message.." />
+                        <textarea onChange={handleChangeMessasge} name="" id="" cols="" rows="4" className=" focus:outline-none mt-4 w-full bg-bgBlack text-sm text-mainTxt border-gray-500 resize-none border-b" placeholder=" Leave a message.." />
                         <div className=" flex justify-center mt-4">
                             <button onClick={handleSubmit} className=" mt-3 p-2 pl-8 pr-8 flex items-center border-2 border-brightTxt rounded hover:bg-brightTxt hover:text-bgBlack text-xl text-brightTxt font-bold ease-in-out duration-300">
                                 <span className=" ">SEND</span>

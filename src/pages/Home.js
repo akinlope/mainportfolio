@@ -9,7 +9,12 @@ const Home = () => {
                         x: 0,
                         y: 0,
                         scale: 1,
-                        rotate: 0
+                        rotate: 0,
+                        transition: {
+                            type: "spring",
+                            stiffness: 200
+                            
+                        }
                     }}
                     initial={{
                         x: -100,
@@ -20,7 +25,12 @@ const Home = () => {
                         x: 0,
                         y: 0,
                         scale: 1,
-                        rotate: 0
+                        rotate: 0,
+                        transition: {
+                            type: "spring",
+                            stiffness: 100
+                            
+                        }
                     }}
                     initial={{
                         x: -500,
@@ -32,7 +42,12 @@ const Home = () => {
                         x: 0,
                         y: 0,
                         scale: 1,
-                        rotate: 0
+                        rotate: 0,
+                        transition: {
+                            type: "spring",
+                            stiffness: 600
+                            
+                        }
                     }}
                     initial={{
                         x: -300,
