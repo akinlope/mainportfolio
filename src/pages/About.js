@@ -13,7 +13,8 @@ const About = () => {
                         x: 0,
                         y: 0,
                         scale: 1,
-                        rotate: 0
+                        rotate: 0,
+                        
                     }}
                     initial={{
                         x: 0,
@@ -34,7 +35,12 @@ const About = () => {
                         x: 0,
                         y: 0,
                         scale: 1,
-                        rotate: 0
+                        rotate: 0,
+                        transition: {
+                            type: "spring",
+                            stiffness: 300
+                            
+                        }
                     }}
                     initial={{
                         x: 300,
@@ -88,7 +94,12 @@ const About = () => {
                         x: 0,
                         y: 0,
                         scale: 1,
-                        rotate: 0
+                        rotate: 0,
+                        transition: {
+                            type: "spring",
+                            stiffness: 300
+                            
+                        }
                     }}
                     initial={{
                         x: -300,
