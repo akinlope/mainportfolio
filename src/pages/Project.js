@@ -34,21 +34,22 @@ const Project = () => {
                 </div>
             </div>
 
-            <div className=" w-full mt-10 flex justify-center">
-                <div className=" flex justify-around w-3/5">
+            <div className=" w-full mt-20 flex justify-around">
+                <div className=" grid grid-cols-2 w-3/5">
 
                     {
                         videoArr.map((elem, i) => {
                             return (
-                                <div className=" w-1/2  ">
-                                    <div className=" bg-slate-100 pb-4 rounded-[10px]">
+                                <div className=" flex justify-around">
+                                    <div className=" bg-slate-100 pb-4 rounded-[10px] h-[350px] mb-10  w-80">
                                         <HoverVideoPlayer
+
                                             videoSrc={elem.url}
                                             pausedOverlay={
                                                 <img
                                                     src={elem.thumbnail}
                                                     alt=" "
-                                                    className=" w-full h-full object-cover "
+                                                    className=" w-full h-full object-cover rounded-t-[10px] "
                                                 />
                                             }
                                             loadingOverlay={
