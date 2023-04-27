@@ -1,4 +1,4 @@
-import man from "../image/man.jpg";
+import man from "../image/man.jpeg";
 import { motion } from "framer-motion";
 import { FaEnvelope } from "react-icons/fa"
 import { BsPhone, BsWhatsapp } from "react-icons/bs"
