@@ -4,6 +4,11 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
+    screens: {
+      "sm": {min: "150px", max: "500px"},
+      "md": {min: "501px", max: "900px"},
+      "lg": {min: "901px", max: "1500px"}
+    },
 
     fontFamily: {
       nunito: "'Nunito', sans-serif"

@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { PaperAirplaneIcon } from "@heroicons/react/24/solid"
 import { useState } from "react";
+import { slideInContact, slideInForm } from "../Motion";
 
 const Contact = () => {
     const [name, setName] = useState("")
@@ -28,42 +29,17 @@ const Contact = () => {
 
     return (
         <div className=" h-screen w-4/5 mx-auto">
-            <div className=" pt-40 p-5">
-                <motion.div
-                animate={{
-                    x: 0,
-                    y: 0,
-                    scale: 1,
-                    rotate: 0,
-                    transition: {
-                        type: "spring",
-                        stiffness: 500
-                        
-                    }
-                }}
-                initial={{
-                    x: 100,
-                    y: 0
-                }}
+            <div className=" pt-32 sm:pt-24 p-5">
+                <motion.div variants={slideInContact} animate="animate" initial="initial"
                 className=" flex-col justify-center text-center">
-                    <p className=" font-nunito text-2xl text-mainTxt mt-4 font-bold ">Fastest way to</p>
-                    <p className="font-Stretch text-5xl mt-2 font-extrabold text-brightTxt">COONTACT</p>
-                    <p className=" font-nunito text-2xl text-mainTxt mt-2 font-bold ">Me</p>
+                    <p className=" font-nunito text-2xl sm:text-xl md:text-xl text-mainTxt mt-4 font-bold ">Fastest way to</p>
+                    <p className="font-Stretch text-5xl sm:text-3xl md:text-3xl mt-2 font-extrabold text-brightTxt">COONTACT</p>
+                    <p className=" font-nunito text-2xl sm:text-xl md:text-xl text-mainTxt mt-2 font-bold ">Me</p>
                 </motion.div>
 
 
-                <motion.form 
-                animate={{
-                    x: 0,
-                    y: 0,
-                    scale: 1,
-                    rotate: 0
-                }}
-                initial={{
-                    x: -100,
-                    y: 0
-                }}
-                className=" flex justify-center mt-10">
+                <motion.form variants={slideInForm} animate="animate" initial="initial"  
+                className=" flex  justify-center mt-10">
                     <div className=" w-3/5">
                         <div className="grid md:grid-cols-2 md:gap-6">
                             <div className="relative z-0 w-full mb-6 group">
@@ -77,9 +53,9 @@ const Contact = () => {
                         </div>
                         <textarea onChange={handleChangeMessasge} name="" id="" cols="" rows="4" className=" focus:outline-none mt-4 w-full bg-bgBlack text-sm text-mainTxt border-gray-500 resize-none border-b" placeholder=" Leave a message.." />
                         <div className=" flex justify-center mt-4">
-                            <button onClick={handleSubmit} className=" mt-3 p-2 pl-8 pr-8 flex items-center border-2 border-brightTxt rounded hover:bg-brightTxt hover:text-bgBlack text-xl text-brightTxt font-bold ease-in-out duration-300">
-                                <span className=" ">SEND</span>
-                                <PaperAirplaneIcon width={20} className=" -rotate-45 ml-2" />
+                            <button onClick={handleSubmit} className=" sm:p-1 mt-3 p-2 pl-8 pr-8 flex items-center border-2 border-brightTxt rounded hover:bg-brightTxt hover:text-bgBlack text-xl text-brightTxt font-bold ease-in-out duration-300">
+                                <span>SEND</span>
+                                <PaperAirplaneIcon width={20} className=" sm:w-4 -rotate-45 ml-2" />
                             </button>
                         </div>
                     </div>
