@@ -36,8 +36,7 @@ export const videoArr = [
         visit: "https://github.com/akinlope/firstReact",
         thumbnail: clock
     },
-    // {
-    //     name: "Food Article",
+    
+];
 
-    // }
-]
+

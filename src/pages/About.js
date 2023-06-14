@@ -2,58 +2,32 @@ import man from "../image/man.jpeg";
 import { motion } from "framer-motion";
 import { FaEnvelope } from "react-icons/fa"
 import { BsPhone, BsWhatsapp } from "react-icons/bs"
+import { profileSlideIn, technologies } from "../Motion";
 
 
 const About = () => {
     return (
-        <div className=" h-screen w-4/5 mx-auto  ">
+        <div className=" w-4/5 lg:h-screen  mx-auto  ">
             <div className=" flex pt-32 justify-center">
-                <motion.div
-                    animate={{
-                        x: 0,
-                        y: 0,
-                        scale: 1,
-                        rotate: 0,
-                        
-                    }}
-                    initial={{
-                        x: 0,
-                        y: 0
-                    }}
-                    className="">
-                    <p className=" font-nunito text-2xl text-mainTxt mt-2 font-bold text-center">Brief Information</p>
-                    <p className=" font-Stretch text-5xl mt-2 font-extrabold text-brightTxt">ABOOUT</p>
-                    <p className=" font-nunito text-2xl text-mainTxt mt-2 font-bold text-center ">Me</p>
+                <motion.div>
+                    <p className=" font-nunito text-2xl sm:text-xl md:text-xl text-mainTxt mt-2 font-bold text-center">Brief Information</p>
+                    <p className=" font-Stretch text-5xl sm:text-3xl md:text-3xl mt-2 font-extrabold text-brightTxt">ABOOUT</p>
+                    <p className=" font-nunito text-2xl sm:text-xl md:text-xl text-mainTxt mt-2 font-bold text-center ">Me</p>
                 </motion.div>
             </div>
 
 
-            <div className="flex justify-between mt-10">
+            <div className=" mt-2 flex justify-between sm:flex-col sm:justify-center md:flex-col md:justify-center sm:ml-5 sm:mr-5 md:ml-5 md:mr-5 ">
                 {/* owner's progile */}
-                <motion.div
-                    animate={{
-                        x: 0,
-                        y: 0,
-                        scale: 1,
-                        rotate: 0,
-                        transition: {
-                            type: "spring",
-                            stiffness: 300
-                            
-                        }
-                    }}
-                    initial={{
-                        x: 300,
-                        y: 0
-                    }}
-                    className="flex w-1/2 bg-slate-200 rounded-md p-2 pb-10">
+                <motion.div variants={profileSlideIn} animate="animate" initial="initial"
+                    className="lg:flex lg:w-1/2 bg-slate-200 rounded-md p-2 pb-10 ">
                     {/* img */}
-                    <div className="">
+                    <div className="flex justify-center">
                         <img className=" rounded-md" src={man} alt="" />
                     </div>
                     {/* write up */}
                     <div className="">
-                        <div className=" p-3 break-words">
+                        <div className=" lg:p-3 break-words">
                             <p className="font-semibold p-3 text-center">My name is AKINRIMISI TOLULOPE SOLOMON, I'm from Lagos state Nigeria. I'm a web developer whos specializes in developing stunnimg websites. I've been working as a web developer since 2022 till date and I have worked on numerous projects with different companies and individuals.</p>
                         </div>
                         {/* icons */}
@@ -74,7 +48,7 @@ const About = () => {
                                     <p>Mail me</p>
                                 </div>
                             </a>
-                            <a href="https://wa.me/+2349035680981?text=Hi,%20I%20will%20be%20needing%20your%20experties%20in...">
+                            <a href="https://wa.me/+2349035680981?text=Hi,%20I%20will%20be%20needing%20your%20expertise%20in...">
                                 <div className=" cursor-pointer">
                                     <div className=" flex justify-center">
                                         <BsWhatsapp width={30} />
@@ -89,23 +63,8 @@ const About = () => {
                     </div>
                 </motion.div>
                 {/* technologies */}
-                <motion.div
-                    animate={{
-                        x: 0,
-                        y: 0,
-                        scale: 1,
-                        rotate: 0,
-                        transition: {
-                            type: "spring",
-                            stiffness: 300
-                            
-                        }
-                    }}
-                    initial={{
-                        x: -300,
-                        y: 0
-                    }}
-                    className=" w-5/12 bg-slate-200 rounded-md p-2 pb-10">
+                <motion.div variants={technologies} animate="animate" initial="initial"
+                    className=" sm:mt-4 md:mt-4 lg:w-5/12 bg-slate-200 rounded-md p-2 pb-10">
                     <div className=" flex justify-center pt-2 font-bold mt-5">
                         <p>SKILLS</p>
                     </div>

@@ -1,41 +1,24 @@
 import { motion } from "framer-motion";
 import HoverVideoPlayer from "react-hover-video-player";
 import { videoArr } from "../helpers"
+import { slideInContact } from "../Motion";
 
 
 const Project = () => {
     return (
-        <div className=" h-screen pt-20 mx-auto w-full">
+        <div className=" pt-20 mx-auto w-full">
             <div className=" flex justify-center">
                 <div>
-                    <motion.div
-                        animate={{
-                            x: 0,
-                            y: 0,
-                            scale: 1,
-                            rotate: 0,
-                            transition: {
-                                type: "spring",
-                                stiffness: 500
-
-                            }
-                        }}
-                        initial={{
-                            x: 100,
-                            y: 0
-                        }}
-
-                        className=" w-fit"
-                    >
-                        <p className="font-nunito text-2xl text-mainTxt mt-2 font-bold text-center" >Some of the</p>
-                        <p className="font-Stretch text-5xl mt-2 font-extrabold text-brightTxt">PROOJECTS</p>
-                        <p className="font-nunito text-2xl text-mainTxt mt-2 font-bold text-center">I've worked on.</p>
+                    <motion.div variants={slideInContact} animate="animate" initial="initial" className=" w-fit">
+                        <p className="font-nunito text-2xl sm:text-xl md:text-xl text-mainTxt mt-2 font-bold text-center" >Some of the</p>
+                        <p className="font-Stretch text-5xl sm:text-3xl md:text-3xl mt-2 font-extrabold text-brightTxt">PROOJECTS</p>
+                        <p className="font-nunito text-2xl sm:text-xl md:text-xl text-mainTxt mt-2 font-bold text-center">I've worked on.</p>
                     </motion.div>
                 </div>
             </div>
 
-            <div className=" w-full mt-20 flex justify-around">
-                <div className=" grid grid-cols-2 w-3/5">
+            <div className=" w-full flex justify-around ">
+                <div className=" mt-4 lg:grid grid-cols-2 w-3/5">
 
                     {
                         videoArr.map((elem, i) => {
