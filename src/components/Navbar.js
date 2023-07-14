@@ -9,7 +9,7 @@ const Navbar = () => {
 
     return (
         <div className=" relative">
-            <div className=" fixed gap-y-5 w-[100px] px-5 h-screen flex flex-col justify-between items-center">
+            <div className=" fixed gap-y-5 sm:w-[50px] w-[100px] px-5 h-screen flex flex-col justify-between items-center">
                 <div className=" h-full w-1  flex-1 bg-[#c5c6c7]"></div>
                 <div className=" flex-[2]  flex flex-col space-y-12 justify-center  text-mainTxt font-semibold">
                     <Link to={"/contact"} className="nav -rotate-90">
