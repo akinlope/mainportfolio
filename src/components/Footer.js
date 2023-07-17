@@ -1,12 +1,9 @@
 const Footer = () => {
-    return ( 
-        <div className="relative">
-            <div className=" absolute gap-y-5 w-[100px] px-5 h-screen flex flex-col">
-
-            </div>
-
+    return (
+        <div className="fixed z-50 bottom-8 right-3 md:right-12 flex flex-col items-center justify-center">
+            <p>Hello world</p>
         </div>
-     );
+    );
 }
- 
+
 export default Footer;

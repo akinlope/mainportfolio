@@ -1,4 +1,4 @@
-import man from "../image/man.jpeg";
+import man from "../image/man.png";
 import { motion } from "framer-motion";
 import { FaEnvelope } from "react-icons/fa"
 import { BsPhone, BsWhatsapp } from "react-icons/bs"
@@ -8,7 +8,7 @@ import { profileSlideIn, technologies } from "../Motion";
 const About = () => {
     return (
         <div className=" w-4/5 lg:h-screen  mx-auto  ">
-            <div className=" flex pt-32 justify-center">
+            <div className=" flex pt-20 justify-center">
                 <motion.div>
                     <p className=" font-nunito text-2xl sm:text-xl md:text-xl text-mainTxt mt-2 font-bold text-center">Brief Information</p>
                     <p className=" font-Stretch text-5xl sm:text-3xl md:text-3xl mt-2 font-extrabold text-brightTxt">ABOOUT</p>
@@ -22,11 +22,11 @@ const About = () => {
                 <motion.div variants={profileSlideIn} animate="animate" initial="initial"
                     className="lg:flex lg:w-1/2 bg-slate-200 rounded-md p-2 pb-10 ">
                     {/* img */}
-                    <div className="flex justify-center">
-                        <img className=" rounded-md" src={man} alt="" />
+                    <div className="flex justify-center lg:w-1/2">
+                        <img className=" rounded-md " src={man} alt="" />
                     </div>
                     {/* write up */}
-                    <div className="">
+                    <div className=" lg:w-2/3">
                         <div className=" lg:p-3 break-words">
                             <p className="font-semibold p-3 text-center">My name is AKINRIMISI TOLULOPE SOLOMON, I'm from Lagos state Nigeria. I'm a web developer whos specializes in developing stunnimg websites. I've been working as a web developer since 2022 till date and I have worked on numerous projects with different companies and individuals.</p>
                         </div>

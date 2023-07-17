@@ -4,13 +4,13 @@ import ErrorPage from "./pages/ErrorPage";
 import Navbar from "./components/Navbar";
 import Project from "./pages/Project";
 import Contact from "./pages/Contact";
-import About from "./pages/About"
+import About from "./pages/About";
+import Footer from "./components/Footer";
+
 
 
 const router = createBrowserRouter([
   {
-    // path: "/",
-    // element: <Test />,
     element:  <Navbar />,
     errorElement: <ErrorPage />,
     children: [
@@ -30,7 +30,8 @@ const router = createBrowserRouter([
         path: "contact",
         element: <Contact />
       }
-    ]
+    ],
+    element: <Footer />
   }
 ])
 
